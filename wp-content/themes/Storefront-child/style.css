@@ -1,0 +1,71 @@
+/*
+Theme Name:   torefront Child
+Theme URI:    https://example.com/storefront-child
+Description:  A child theme for Storefront.
+Author:       Your Name
+Author URI:   https://example.com
+Template:     storefront
+Version:      1.0.0
+Text Domain:  storefront-child
+*/
+
+@import url('../storefront/style.css'); /* Import the parent theme's styles */
+
+#checkout-progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #0073e6;
+    transition: width 0.3s ease;
+}
+
+.checkout-step {
+    margin-bottom: 20px;
+}
+
+button#next-step {
+    margin-top: 20px;
+}
+
+
+/* Styles for delete icon in classic checkout page */
+.woocommerce table.shop_table .quantity-and-remove {
+    display: flex;
+    align-items: center;
+    }
+    
+    .woocommerce table.shop_table .quantity-and-remove .delete {
+    color: grey; /* Change icon color to grey */
+    font-size: 20px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 20px;
+    cursor: pointer; /* Hand cursor on hover */
+    margin-left: 5px; /* Adjust space between quantity input and delete icon */
+    }
+    
+    .woocommerce table.shop_table .quantity-and-remove .delete:hover {
+    color: darkgrey; /* Change color on hover to a darker grey */
+    }
+/* Container for the buttons */
+.checkout-buttons {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+    gap: 15px; /* Adds space between the buttons */
+    margin-top: 20px; /* Margin to separate from the content above */
+    font-size: 10px;
+}
+#order_review_heading, #order_review{
+    width:100%  !important;
+}
+
